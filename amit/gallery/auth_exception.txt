@@ -1,0 +1,7 @@
+ | where message == @'Message: Exception encountered in Authentication handler, Exception: System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.Enumerable.Last[TSource](IEnumerable`1 source)
+   at Microsoft.MetaAnalytics.Tokens.AuthPublicKeyCache..ctor() in d:\_Bld\9117\4849\Sources\Product\Source\DataLab\Service\Tokens\AuthPublicKeyCache.cs:line 51
+   at Microsoft.MetaAnalytics.Tokens.AuthPublicKeyCache.get_DefaultShared() in d:\_Bld\9117\4849\Sources\Product\Source\DataLab\Service\Tokens\AuthPublicKeyCache.cs:line 74
+   at Microsoft.MachineLearning.Tokens.UserTokenHandler..ctor() in d:\_Bld\9117\4849\Sources\Product\Source\DataLab\Service\Tokens\UserTokenHandler.cs:line 39
+   at Microsoft.MachineLearning.Community.Catalog.Service.AuthenticationHandler.ExtractToken(String tokenString) in e:\Community\Catalog\Main\Product\Source\CatalogService\AuthenticationHandler.cs:line 123
+   at Microsoft.MachineLearning.Community.Catalog.Service.AuthenticationHandler.SendAsyncInternal(HttpRequestMessage request, CancellationToken cancellationToken) in e:\Community\Catalog\Main\Product\Source\CatalogService\AuthenticationHandler.cs:line 374'
